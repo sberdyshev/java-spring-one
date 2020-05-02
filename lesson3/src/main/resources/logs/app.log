@@ -1,0 +1,445 @@
+22:19:56.406 969  [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+22:19:59.620 4183 [main] DEBUG r.s.g.c.CustomerProductCLIController - CustomerProductCLIController has started
+22:20:03.041 7604 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/help"
+22:20:03.041 7604 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/help"
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCstsByPrd
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /dltCst
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /dltPrd
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /help
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - false; arguments are separated from the command - false
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "HELP"
+22:20:03.042 7605 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[]"
+22:20:03.043 7606 [main] DEBUG r.s.g.controller.command.Command - Command type HELP. Amount of params 0. Expected amount 0. Amount of arguments is correct.
+22:20:03.045 7608 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "help"
+22:20:09.179 13742 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtCsts"
+22:20:09.179 13742 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtCsts"
+22:20:09.179 13742 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:20:09.179 13742 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - false; arguments are separated from the command - false
+22:20:09.179 13742 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_ALL_CUSTOMERS"
+22:20:09.179 13742 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[]"
+22:20:09.180 13743 [main] DEBUG r.s.g.controller.command.Command - Command type GET_ALL_CUSTOMERS. Amount of params 0. Expected amount 0. Amount of arguments is correct.
+22:20:09.180 13743 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get all customers"
+22:20:09.180 13743 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - Processing "Get all customers"
+22:20:09.181 13744 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllCustomers() - start
+22:20:09.181 13744 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllCustomers() - calling db
+22:20:09.431 13994 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllCustomers() - got 3 customers
+22:20:09.431 13994 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllCustomers() - end
+22:20:09.431 13994 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - found customer with id "3".
+22:20:09.431 13994 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - found customer with id "2".
+22:20:09.431 13994 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - found customer with id "1".
+22:20:09.431 13994 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - Processed "Get all customers"
+22:20:15.243 19806 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtPrds"
+22:20:15.243 19806 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtPrds"
+22:20:15.243 19806 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:20:15.243 19806 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:20:15.243 19806 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:20:15.243 19806 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:15.243 19806 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:20:15.243 19806 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - false; arguments are separated from the command - false
+22:20:15.243 19806 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_ALL_PRODUCTS"
+22:20:15.243 19806 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[]"
+22:20:15.243 19806 [main] DEBUG r.s.g.controller.command.Command - Command type GET_ALL_PRODUCTS. Amount of params 0. Expected amount 0. Amount of arguments is correct.
+22:20:15.244 19807 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get all products"
+22:20:15.244 19807 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllProducts() - Processing "Get all products"
+22:20:15.244 19807 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllProducts() - start
+22:20:15.244 19807 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllProducts() - calling db
+22:20:15.253 19816 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllProducts() - got 3 products
+22:20:15.254 19817 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllProducts() - end
+22:20:15.254 19817 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllProducts() - found product with id "1".
+22:20:15.254 19817 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllProducts() - found product with id "2".
+22:20:15.254 19817 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllProducts() - found product with id "3".
+22:20:15.254 19817 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllProducts() - Processed "Get all products"
+22:20:23.365 27928 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtPrdsByCst 1"
+22:20:23.366 27929 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtPrdsByCst 1"
+22:20:23.366 27929 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:20:23.366 27929 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:23.366 27929 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:20:23.367 27930 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:23.367 27930 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:20:23.367 27930 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:23.367 27930 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:20:23.368 27931 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:23.368 27931 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:20:23.368 27931 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - true
+22:20:23.382 27945 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_PRODUCTS_BY_CUSTOMER_ID"
+22:20:23.382 27945 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[1]"
+22:20:23.382 27945 [main] DEBUG r.s.g.controller.command.Command - Command type GET_PRODUCTS_BY_CUSTOMER_ID. Amount of params 1. Expected amount 1. Amount of arguments is correct.
+22:20:23.382 27945 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get products by a customer id"
+22:20:23.383 27946 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Processing "Get products by a customer id"
+22:20:23.383 27946 [main] DEBUG r.s.g.controller.command.Command - getArgAtPos() - got argument "1" at position "0".
+22:20:23.383 27946 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Argument (customerId): "1"
+22:20:23.383 27946 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - start
+22:20:23.383 27946 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - getting products by customer id "1" from db
+22:20:23.395 27958 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - calling db
+22:20:23.401 27964 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - got 3 products
+22:20:23.401 27964 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - end
+22:20:23.401 27964 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Customer with id "1" relates to a product with id "1".
+22:20:23.401 27964 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Customer with id "1" relates to a product with id "2".
+22:20:23.401 27964 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Customer with id "1" relates to a product with id "3".
+22:20:23.401 27964 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Processed "Get products by a customer id"
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtPrdsByCst 2"
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtPrdsByCst 2"
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - true
+22:20:26.038 30601 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_PRODUCTS_BY_CUSTOMER_ID"
+22:20:26.039 30602 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[2]"
+22:20:26.039 30602 [main] DEBUG r.s.g.controller.command.Command - Command type GET_PRODUCTS_BY_CUSTOMER_ID. Amount of params 1. Expected amount 1. Amount of arguments is correct.
+22:20:26.039 30602 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get products by a customer id"
+22:20:26.039 30602 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Processing "Get products by a customer id"
+22:20:26.039 30602 [main] DEBUG r.s.g.controller.command.Command - getArgAtPos() - got argument "2" at position "0".
+22:20:26.039 30602 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Argument (customerId): "2"
+22:20:26.039 30602 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - start
+22:20:26.039 30602 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - getting products by customer id "2" from db
+22:20:26.039 30602 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - calling db
+22:20:26.045 30608 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - got 1 products
+22:20:26.045 30608 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - end
+22:20:26.045 30608 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Customer with id "2" relates to a product with id "3".
+22:20:26.046 30609 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Processed "Get products by a customer id"
+22:20:28.005 32568 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtPrdsByCst 3"
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtPrdsByCst 3"
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - true
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_PRODUCTS_BY_CUSTOMER_ID"
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[3]"
+22:20:28.006 32569 [main] DEBUG r.s.g.controller.command.Command - Command type GET_PRODUCTS_BY_CUSTOMER_ID. Amount of params 1. Expected amount 1. Amount of arguments is correct.
+22:20:28.006 32569 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get products by a customer id"
+22:20:28.007 32570 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Processing "Get products by a customer id"
+22:20:28.007 32570 [main] DEBUG r.s.g.controller.command.Command - getArgAtPos() - got argument "3" at position "0".
+22:20:28.007 32570 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Argument (customerId): "3"
+22:20:28.007 32570 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - start
+22:20:28.007 32570 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - getting products by customer id "3" from db
+22:20:28.007 32570 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - calling db
+22:20:28.012 32575 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - got 0 products
+22:20:28.012 32575 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - end
+22:20:28.013 32576 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - No products where found related to a customer with id "3".
+22:20:28.013 32576 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Processed "Get products by a customer id"
+22:20:31.052 35615 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtPrdsByCst 4"
+22:20:31.052 35615 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtPrdsByCst 4"
+22:20:31.052 35615 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:20:31.052 35615 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:31.052 35615 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:20:31.052 35615 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:31.052 35615 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:20:31.052 35615 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:31.052 35615 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:20:31.052 35615 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:31.052 35615 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:20:31.053 35616 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - true
+22:20:31.053 35616 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_PRODUCTS_BY_CUSTOMER_ID"
+22:20:31.053 35616 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[4]"
+22:20:31.053 35616 [main] DEBUG r.s.g.controller.command.Command - Command type GET_PRODUCTS_BY_CUSTOMER_ID. Amount of params 1. Expected amount 1. Amount of arguments is correct.
+22:20:31.053 35616 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get products by a customer id"
+22:20:31.053 35616 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Processing "Get products by a customer id"
+22:20:31.053 35616 [main] DEBUG r.s.g.controller.command.Command - getArgAtPos() - got argument "4" at position "0".
+22:20:31.053 35616 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Argument (customerId): "4"
+22:20:31.053 35616 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - start
+22:20:31.053 35616 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - getting products by customer id "4" from db
+22:20:31.053 35616 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - calling db
+22:20:31.057 35620 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - got 0 products
+22:20:31.057 35620 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - end
+22:20:31.057 35620 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - No products where found related to a customer with id "4".
+22:20:31.057 35620 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Processed "Get products by a customer id"
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtCstsByPrd 1"
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtCstsByPrd 1"
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCstsByPrd
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - true
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_CUSTOMERS_BY_PRODUCT_ID"
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[1]"
+22:20:40.348 44911 [main] DEBUG r.s.g.controller.command.Command - Command type GET_CUSTOMERS_BY_PRODUCT_ID. Amount of params 1. Expected amount 1. Amount of arguments is correct.
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get customers by a product id"
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Processing "Get customers by a product id"
+22:20:40.348 44911 [main] DEBUG r.s.g.controller.command.Command - getArgAtPos() - got argument "1" at position "0".
+22:20:40.348 44911 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Argument (productId): 1
+22:20:40.348 44911 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - start
+22:20:40.349 44912 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - getting products by cistomer id "1" from db
+22:20:40.353 44916 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - calling db
+22:20:40.358 44921 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - got 1 customers
+22:20:40.358 44921 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - end
+22:20:40.358 44921 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Product with id "1" relates to a customer with id "1".
+22:20:40.358 44921 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Processed "Get customers by a product id"
+22:20:42.332 46895 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtCstsByPrd 2"
+22:20:42.332 46895 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtCstsByPrd 2"
+22:20:42.332 46895 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:20:42.332 46895 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:42.332 46895 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:20:42.332 46895 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:42.333 46896 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:20:42.333 46896 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:42.333 46896 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:20:42.333 46896 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:42.333 46896 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:20:42.333 46896 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:42.333 46896 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCstsByPrd
+22:20:42.333 46896 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - true
+22:20:42.333 46896 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_CUSTOMERS_BY_PRODUCT_ID"
+22:20:42.333 46896 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[2]"
+22:20:42.333 46896 [main] DEBUG r.s.g.controller.command.Command - Command type GET_CUSTOMERS_BY_PRODUCT_ID. Amount of params 1. Expected amount 1. Amount of arguments is correct.
+22:20:42.333 46896 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get customers by a product id"
+22:20:42.334 46897 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Processing "Get customers by a product id"
+22:20:42.334 46897 [main] DEBUG r.s.g.controller.command.Command - getArgAtPos() - got argument "2" at position "0".
+22:20:42.334 46897 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Argument (productId): 2
+22:20:42.334 46897 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - start
+22:20:42.334 46897 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - getting products by cistomer id "2" from db
+22:20:42.334 46897 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - calling db
+22:20:42.340 46903 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - got 1 customers
+22:20:42.340 46903 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - end
+22:20:42.340 46903 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Product with id "2" relates to a customer with id "1".
+22:20:42.340 46903 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Processed "Get customers by a product id"
+22:20:44.704 49267 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtCstsByPrd 3"
+22:20:44.704 49267 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtCstsByPrd 3"
+22:20:44.704 49267 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:20:44.704 49267 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:44.704 49267 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:20:44.704 49267 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:44.704 49267 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:20:44.704 49267 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:44.704 49267 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:20:44.704 49267 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:44.705 49268 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:20:44.705 49268 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:44.705 49268 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCstsByPrd
+22:20:44.705 49268 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - true
+22:20:44.705 49268 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_CUSTOMERS_BY_PRODUCT_ID"
+22:20:44.705 49268 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[3]"
+22:20:44.705 49268 [main] DEBUG r.s.g.controller.command.Command - Command type GET_CUSTOMERS_BY_PRODUCT_ID. Amount of params 1. Expected amount 1. Amount of arguments is correct.
+22:20:44.705 49268 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get customers by a product id"
+22:20:44.705 49268 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Processing "Get customers by a product id"
+22:20:44.705 49268 [main] DEBUG r.s.g.controller.command.Command - getArgAtPos() - got argument "3" at position "0".
+22:20:44.705 49268 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Argument (productId): 3
+22:20:44.705 49268 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - start
+22:20:44.705 49268 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - getting products by cistomer id "3" from db
+22:20:44.706 49269 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - calling db
+22:20:44.710 49273 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - got 2 customers
+22:20:44.710 49273 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - end
+22:20:44.710 49273 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Product with id "3" relates to a customer with id "1".
+22:20:44.711 49274 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Product with id "3" relates to a customer with id "2".
+22:20:44.711 49274 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Processed "Get customers by a product id"
+22:20:48.142 52705 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtCstsByPrd a"
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtCstsByPrd a"
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCstsByPrd
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - true
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_CUSTOMERS_BY_PRODUCT_ID"
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[a]"
+22:20:48.143 52706 [main] DEBUG r.s.g.controller.command.Command - Command type GET_CUSTOMERS_BY_PRODUCT_ID. Amount of params 1. Expected amount 1. Amount of arguments is correct.
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get customers by a product id"
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Processing "Get customers by a product id"
+22:20:48.143 52706 [main] DEBUG r.s.g.controller.command.Command - getArgAtPos() - got argument "a" at position "0".
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Argument (productId): a
+22:20:48.143 52706 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Argument type is incorrect. Expected Long. Entered: "a"
+22:21:00.808 65371 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtCsts"
+22:21:00.808 65371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtCsts"
+22:21:00.808 65371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:21:00.809 65372 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - false; arguments are separated from the command - false
+22:21:00.809 65372 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_ALL_CUSTOMERS"
+22:21:00.809 65372 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[]"
+22:21:00.809 65372 [main] DEBUG r.s.g.controller.command.Command - Command type GET_ALL_CUSTOMERS. Amount of params 0. Expected amount 0. Amount of arguments is correct.
+22:21:00.809 65372 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get all customers"
+22:21:00.809 65372 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - Processing "Get all customers"
+22:21:00.809 65372 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllCustomers() - start
+22:21:00.809 65372 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllCustomers() - calling db
+22:21:00.817 65380 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllCustomers() - got 3 customers
+22:21:00.818 65381 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllCustomers() - end
+22:21:00.818 65381 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - found customer with id "3".
+22:21:00.818 65381 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - found customer with id "2".
+22:21:00.818 65381 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - found customer with id "1".
+22:21:00.818 65381 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - Processed "Get all customers"
+22:21:12.898 77461 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/dltCst 1"
+22:21:12.898 77461 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/dltCst 1"
+22:21:12.898 77461 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:21:12.898 77461 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:21:12.898 77461 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:21:12.898 77461 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:21:12.898 77461 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:21:12.898 77461 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:21:12.898 77461 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:21:12.899 77462 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:21:12.899 77462 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:21:12.899 77462 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:21:12.899 77462 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCstsByPrd
+22:21:12.899 77462 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:21:12.899 77462 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /dltCst
+22:21:12.899 77462 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - true
+22:21:12.899 77462 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "DELETE_CUSTOMER_BY_ID"
+22:21:12.899 77462 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[1]"
+22:21:12.899 77462 [main] DEBUG r.s.g.controller.command.Command - Command type DELETE_CUSTOMER_BY_ID. Amount of params 1. Expected amount 1. Amount of arguments is correct.
+22:21:12.899 77462 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Delete a customer by id"
+22:21:12.899 77462 [main] DEBUG r.s.g.c.CustomerProductCLIController - processDeleteCustomerById() - Processing "Delete a customer by id"
+22:21:12.899 77462 [main] DEBUG r.s.g.controller.command.Command - getArgAtPos() - got argument "1" at position "0".
+22:21:12.899 77462 [main] DEBUG r.s.g.c.CustomerProductCLIController - processDeleteCustomerById() - Argument (customerId): 1
+22:21:12.899 77462 [main] DEBUG r.s.g.r.CustomerProductRepository - deleteCustomerByCustomerId() - start
+22:21:12.906 77469 [main] DEBUG r.s.g.r.CustomerProductRepository - deleteCustomerByCustomerId() - calling db
+22:21:12.941 77504 [main] DEBUG r.s.g.r.CustomerProductRepository - deleteCustomerByCustomerId() - customer with id 1 deleted
+22:21:12.942 77505 [main] DEBUG r.s.g.r.CustomerProductRepository - deleteCustomerByCustomerId() - end
+22:21:12.942 77505 [main] DEBUG r.s.g.c.CustomerProductCLIController - processDeleteCustomerById() - Customer with an id "1" has been successfully deleted.
+22:21:12.942 77505 [main] DEBUG r.s.g.c.CustomerProductCLIController - processDeleteCustomerById() - Processed "Delete a customer by id"
+22:21:23.573 88136 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtCsts"
+22:21:23.573 88136 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtCsts"
+22:21:23.573 88136 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:21:23.573 88136 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - false; arguments are separated from the command - false
+22:21:23.573 88136 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_ALL_CUSTOMERS"
+22:21:23.573 88136 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[]"
+22:21:23.573 88136 [main] DEBUG r.s.g.controller.command.Command - Command type GET_ALL_CUSTOMERS. Amount of params 0. Expected amount 0. Amount of arguments is correct.
+22:21:23.573 88136 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get all customers"
+22:21:23.574 88137 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - Processing "Get all customers"
+22:21:23.574 88137 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllCustomers() - start
+22:21:23.574 88137 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllCustomers() - calling db
+22:21:23.580 88143 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllCustomers() - got 2 customers
+22:21:23.580 88143 [main] DEBUG r.s.g.r.CustomerProductRepository - getAllCustomers() - end
+22:21:23.580 88143 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - found customer with id "3".
+22:21:23.580 88143 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - found customer with id "2".
+22:21:23.580 88143 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetAllCustomers() - Processed "Get all customers"
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtCstsByPrd 1"
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtCstsByPrd 1"
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCstsByPrd
+22:21:32.743 97306 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - true
+22:21:32.744 97307 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_CUSTOMERS_BY_PRODUCT_ID"
+22:21:32.744 97307 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[1]"
+22:21:32.744 97307 [main] DEBUG r.s.g.controller.command.Command - Command type GET_CUSTOMERS_BY_PRODUCT_ID. Amount of params 1. Expected amount 1. Amount of arguments is correct.
+22:21:32.744 97307 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get customers by a product id"
+22:21:32.744 97307 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Processing "Get customers by a product id"
+22:21:32.744 97307 [main] DEBUG r.s.g.controller.command.Command - getArgAtPos() - got argument "1" at position "0".
+22:21:32.744 97307 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Argument (productId): 1
+22:21:32.744 97307 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - start
+22:21:32.744 97307 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - getting products by cistomer id "1" from db
+22:21:32.744 97307 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - calling db
+22:21:32.752 97315 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - got 0 customers
+22:21:32.752 97315 [main] DEBUG r.s.g.r.CustomerProductRepository - getCustomersByProductId() - end
+22:21:32.752 97315 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - No customers where found related to a product with id "1".
+22:21:32.752 97315 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetCustomersByProductId() - Processed "Get customers by a product id"
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtPrdsByCst 1"
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtPrdsByCst 1"
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - true
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_PRODUCTS_BY_CUSTOMER_ID"
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[1]"
+22:21:42.162 106725 [main] DEBUG r.s.g.controller.command.Command - Command type GET_PRODUCTS_BY_CUSTOMER_ID. Amount of params 1. Expected amount 1. Amount of arguments is correct.
+22:21:42.162 106725 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get products by a customer id"
+22:21:42.163 106726 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Processing "Get products by a customer id"
+22:21:42.163 106726 [main] DEBUG r.s.g.controller.command.Command - getArgAtPos() - got argument "1" at position "0".
+22:21:42.163 106726 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Argument (customerId): "1"
+22:21:42.163 106726 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - start
+22:21:42.163 106726 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - getting products by customer id "1" from db
+22:21:42.163 106726 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - calling db
+22:21:42.170 106733 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - got 0 products
+22:21:42.170 106733 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - end
+22:21:42.170 106733 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - No products where found related to a customer with id "1".
+22:21:42.170 106733 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Processed "Get products by a customer id"
+22:21:46.019 110582 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/gtPrdsByCst 2"
+22:21:46.019 110582 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/gtPrdsByCst 2"
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - true; arguments are separated from the command - false
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - false
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - true; arguments are separated from the command - true
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "GET_PRODUCTS_BY_CUSTOMER_ID"
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[2]"
+22:21:46.020 110583 [main] DEBUG r.s.g.controller.command.Command - Command type GET_PRODUCTS_BY_CUSTOMER_ID. Amount of params 1. Expected amount 1. Amount of arguments is correct.
+22:21:46.020 110583 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "Get products by a customer id"
+22:21:46.021 110584 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Processing "Get products by a customer id"
+22:21:46.021 110584 [main] DEBUG r.s.g.controller.command.Command - getArgAtPos() - got argument "2" at position "0".
+22:21:46.021 110584 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Argument (customerId): "2"
+22:21:46.021 110584 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - start
+22:21:46.021 110584 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - getting products by customer id "2" from db
+22:21:46.021 110584 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - calling db
+22:21:46.028 110591 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - got 1 products
+22:21:46.028 110591 [main] DEBUG r.s.g.r.CustomerProductRepository - getProductsByCustomerId() - end
+22:21:46.028 110591 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Customer with id "2" relates to a product with id "3".
+22:21:46.029 110592 [main] DEBUG r.s.g.c.CustomerProductCLIController - processGetProductsByCustomerId() - Processed "Get products by a customer id"
+22:21:50.807 115370 [main] DEBUG r.s.g.c.CustomerProductCLIController - Line read "/exit"
+22:21:50.807 115370 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Parsing line: "/exit"
+22:21:50.807 115370 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCsts
+22:21:50.807 115370 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCst
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrds
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrd
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtPrdsByCst
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /gtCstsByPrd
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /dltCst
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /dltPrd
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /help
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - false; command has arguments - false; arguments are separated from the command - false
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Checking command /exit
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - The beginning of the input is the same - true; command has arguments - false; arguments are separated from the command - false
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Command type: "EXIT"
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - parse() - Arguments: "[]"
+22:21:50.808 115371 [main] DEBUG r.s.g.controller.command.Command - Command type EXIT. Amount of params 0. Expected amount 0. Amount of arguments is correct.
+22:21:50.808 115371 [main] DEBUG r.s.g.c.CustomerProductCLIController - Chose "exit"
