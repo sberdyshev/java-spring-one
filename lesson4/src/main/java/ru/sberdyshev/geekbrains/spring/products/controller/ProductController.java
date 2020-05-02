@@ -6,10 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import ru.sberdyshev.geekbrains.spring.products.entity.Product;
 import ru.sberdyshev.geekbrains.spring.products.service.ProductService;
 
@@ -26,50 +23,38 @@ public class ProductController {
     public ProductController(ProductService productService) {
         this.productService = productService;
     }
-//    @GetMapping
-//    public String allPersons(@RequestParam("minPrice") BigDecimal minPrice,
-//                             @RequestParam("maxPrice") BigDecimal maxPrice,
-//                             Model model) {
-//        model.addAttribute("products", productService.getAllPersons());
-//        return "products";
-//    }
-//    @GetMapping("/form")
-//    public String formPerson(Model model) {
-//        model.addAttribute("product", new Product());
-//        return "product";
-//    }
-//
-//    @PostMapping("/form")
-//    public String newPerson(@Valid Product product, BindingResult bindingResult) {
-//        if (bindingResult.hasErrors()) {
-//            return "product_add";
-//        }
-//
-//        productService.insert(product);
-//        return "redirect:/product";
-//    }
 
-    @GetMapping("/product/{product-id}/details")
+    @GetMapping("/product/{product-id}/edit")
     public String getProduct(@PathVariable(name = "product-id") Long productId, Model model) {
-        logger.debug("Called /product/{}/details", productId);
+        logger.debug("Called GET /product/{}/details", productId);
         model.addAttribute("product", (productService.findById(productId)).get());
-        return "product_details";
+        return "product_edit";
     }
 
     @GetMapping("/product/new")
     public String addProduct(Model model) {
-        logger.debug("Called /product/new");
+        logger.debug("Called GET /product/new");
         model.addAttribute("product", new Product());
         return "product_add";
     }
 
     @PostMapping("/product")
     public String newProduct(@Valid Product product, BindingResult bindingResult) {
-        logger.debug("Called /product");
+        logger.debug("Called POST /product");
         if (bindingResult.hasErrors()) {
             return "product_add";
         }
         productService.insert(product);
+        return "redirect:/products";
+    }
+
+    @PutMapping("/product")
+    public String updateProduct(@Valid Product product, BindingResult bindingResult) {
+        logger.debug("Called PUT /product");
+        if (bindingResult.hasErrors()) {
+            return "product_edit";
+        }
+        productService.update(product);
         return "redirect:/products";
     }
 
@@ -79,10 +64,12 @@ public class ProductController {
                                  @RequestParam(value = "page", required = false) Integer page,
                                  @RequestParam(value = "pageSize", required = false) Integer pageSize,
                                  Model model) {
-        logger.debug("Called /products with min prices \"{}\", max prices \"{}\"", minPrice, maxPrice);
+        logger.debug("Called GET /products with min prices \"{}\", max prices \"{}\"", minPrice, maxPrice);
         model.addAttribute("page", page);
         model.addAttribute("pageSize", pageSize);
-        model.addAttribute("products", productService.getAllProductsByPageAndMinAndMaxPrice(minPrice, maxPrice, page, pageSize));
+        model.addAttribute("minPrice", minPrice);
+        model.addAttribute("maxPrice", maxPrice);
+        model.addAttribute("productPage", productService.getAllProductsByPageAndMinAndMaxPrice(minPrice, maxPrice, page, pageSize));
         return "product_list";
     }
 }

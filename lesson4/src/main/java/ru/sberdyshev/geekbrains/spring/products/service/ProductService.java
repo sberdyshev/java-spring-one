@@ -3,6 +3,7 @@ package ru.sberdyshev.geekbrains.spring.products.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -99,16 +100,16 @@ public class ProductService {
     }
 
     @Transactional(readOnly = true)
-    public List<Product> getAllProductsByPageAndMinAndMaxPrice(BigDecimal minPrice, BigDecimal maxPrice, Integer pageNumber, Integer pageSize) {
+    public Page<Product> getAllProductsByPageAndMinAndMaxPrice(BigDecimal minPrice, BigDecimal maxPrice, Integer pageNumber, Integer pageSize) {
         logger.debug("Called getAllProductsByMinAndMaxPrice with page number \"{}\", page size\"{}\", min price \"{}\", nax price \"{}\"", pageNumber, pageSize, minPrice, maxPrice);
         Pageable page = PageRequest.of(0, 5);
 //        page = null;
         if (pageNumber != null && pageSize != null) {
-            page = PageRequest.of(pageNumber, pageSize);
+            page = PageRequest.of(pageNumber-1, pageSize);
         }
         if (minPrice == null) {
             if (maxPrice == null) {
-                return productRepository.findAll(page).getContent();
+                return productRepository.findAll(page);
             } else {
                 return productRepository.findAllByCostLessThanEqual(maxPrice, page);
             }
