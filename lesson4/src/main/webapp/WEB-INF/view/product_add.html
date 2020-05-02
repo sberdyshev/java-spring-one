@@ -9,13 +9,15 @@
 
 <nav th:replace="fragments/navbar.html :: navbar"/>
 
-<h1>Person</h1>
+<h1>Product</h1>
 
 <form th:action="@{/product}" th:object="${product}" method="post">
     <p>Product Name:</p>
     <p><input type="text" th:field="*{name}"></p>
     <p>Product Cost</p>
     <p><input type="text" th:field="*{cost}"></p>
+    <p>Product Description</p>
+    <p><input type="text" th:field="*{description}"></p>
     <button type="submit">Save</button>
 </form>
 

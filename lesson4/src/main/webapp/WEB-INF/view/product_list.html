@@ -11,13 +11,10 @@
 
 <h1>Product list</h1>
 
-<!--<a th:href="@{/product/new}">Create product</a>-->
 <p>
 <form method="get" th:action="@{/products}">
-    <label for="minPrice">Min price</label><input type="number" id="minPrice" name="minPrice">
-    <label for="maxPrice">Max price</label><input type="number" id="maxPrice" name="maxPrice">
-    <label for="Page">Page</label><input type="number" id="page" name="page" value="${page}">
-    <label for="PageSize">Page size</label><input type="number" id="pageSize" name="pageSize" value=${pageSize}>
+    <label for="minPrice">Min price</label><input type="number" id="minPrice" name="minPrice" th:value="${minPrice}">
+    <label for="maxPrice">Max price</label><input type="number" id="maxPrice" name="maxPrice" th:value="${maxPrice}">
     <button type="submit">Apply</button>
     <table>
         <tr>
@@ -26,16 +23,28 @@
             <th>Product Cost</th>
         </tr>
 
-        <tr th:each="product : ${products}">
-            <td><a th:href="@{/product/{id}/details(id=${product.id})}" th:text="${product.id}">id</a></td>
+        <tr th:if="${productPage.hasContent()}" th:each="product : ${productPage.content}">
+            <td><a th:href="@{/product/{id}/edit(id=${product.id})}" th:text="${product.id}">id</a></td>
             <td th:text="${product.name}">product name</td>
             <td th:text="${product.cost}">email</td>
         </tr>
-    </table>
 
-    <button type="submit">Apply</button>
+        <tr th:unless="${productPage.hasContent()}">
+            <td colspan="4">No data</td>
+        </tr>
+    </table>
 </form>
 </p>
+
+<div th:if="${productPage.hasContent()}" class="pagination">
+    <a th:href="@{/products(page=${1}, pageSize=${productPage.size}, minPrice=${minPrice}, maxPrice=${maxPrice})}">&laquo;</a>
+
+    <a th:each="num: ${#numbers.sequence(1, productPage.totalPages)}"
+       th:classappend="${num == productPage.number + 1} ? 'active'"
+       th:href="@{/products(page=${num}, pageSize=${productPage.size}, minPrice=${minPrice}, maxPrice=${maxPrice})}">[[${num}]]</a>
+
+    <a th:href="@{/products(page=${productPage.totalPages}, pageSize=${productPage.size}, minPrice=${minPrice}, maxPrice=${maxPrice})}">&raquo;</a>
+</div>
 
 </body>
 </html>
