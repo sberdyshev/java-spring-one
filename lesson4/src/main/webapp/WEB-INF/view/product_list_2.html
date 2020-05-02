@@ -1,0 +1,37 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" th:href="@{/resources/style.css}">
+</head>
+
+<body>
+
+<nav th:replace="fragments/navbar.html :: navbar"/>
+
+<h1>Product list</h1>
+
+<!--<a th:href="@{/product/new}">Create product</a>-->
+<p>
+<form method="get" th:action="@{/products}">
+    <label for="minPrice">Min price</label><input type="number" id="minPrice" name="minPrice">
+    <label for="maxPrice">Max price</label><input type="number" id="maxPrice" name="maxPrice">
+    <button type="submit">Apply</button>
+</form>
+</p>
+<table>
+    <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Product Cost</th>
+    </tr>
+
+    <tr th:each="product : ${products}">
+        <td><a th:href="@{/product/{id}/details(id=${product.id})}" th:text="${product.id}">id</a></td>
+        <td th:text="${product.name}">product name</td>
+        <td th:text="${product.cost}">email</td>
+    </tr>
+</table>
+
+</body>
+</html>
