@@ -1,0 +1,21 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>Product list</h1>
+
+<a th:href="@{/product}">Product catalogue</a>
+<table>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>cost</th>
+    </tr>
+
+    <tr th:object="${product}">
+        <td><a th:href="@{/product/{id}(id=${product.id})}" th:text="${product.id}">id</a></td>
+        <td th:text="${product.name}">NAME</td>
+        <td th:text="${product.cost}">COST</td>
+    </tr>
+</table>
+
+</body>
+</html>
