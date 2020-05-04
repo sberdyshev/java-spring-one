@@ -1,4 +1,4 @@
-package ru.sberdyshev.geekbrains.java.spring.springboot.entity;
+package ru.sberdyshev.geekbrains.java.spring.springboot.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
