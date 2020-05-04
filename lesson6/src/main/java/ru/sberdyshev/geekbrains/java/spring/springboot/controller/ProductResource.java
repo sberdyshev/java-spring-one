@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.sberdyshev.geekbrains.java.spring.springboot.domain.Product;
@@ -27,14 +28,16 @@ public class ProductResource {
         this.productService = productService;
     }
 
-    @GetMapping(path = "/products", produces = "application/json")
+    @GetMapping(path = "/products",
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public GenericListDto<Product> getAllProducts() {
         logger.debug("Called GET /api/v1/products");
         GenericListDto<Product> genericListDto = new GenericListDto<>(productService.getAllProducts());
         return genericListDto;
     }
 
-    @GetMapping(path = "/products/{productId}", produces = "application/json")
+    @GetMapping(path = "/products/{productId}",
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ProductDto getProduct(@PathVariable Long productId) {
         logger.debug("Called GET /api/v1/products/{}", productId);
         Optional<Long> optionalProductId = Optional.ofNullable(productId);
@@ -46,7 +49,9 @@ public class ProductResource {
         return productDto;
     }
 
-    @PostMapping("/products/new")
+    @PostMapping(path = "/products/new",
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ProductDto createProduct(@RequestBody Product product) {
         logger.debug("Called POST /api/v1/products/new with new product with id \"{}\", name \"{}\", descr \"{}\", cost \"{}\"",
                 product.getId(),
@@ -61,7 +66,9 @@ public class ProductResource {
         return productDto;
     }
 
-    @PutMapping("/products/{productId}")
+    @PutMapping(path = "/products/{productId}",
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ProductDto updateProduct(@PathVariable Long productId, @RequestBody Product product) {
         logger.debug("Called PUT /api/v1/products/{} with product with id \"{}\", name \"{}\", descr \"{}\", cost \"{}\"",
                 productId,
@@ -77,7 +84,8 @@ public class ProductResource {
         return productDto;
     }
 
-    @DeleteMapping("/products/{productId}")
+    @DeleteMapping(path = "/products/{productId}",
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ProductDto deleteProduct(@PathVariable Long productId) {
         logger.debug("Called DELETE /api/v1/products/{}", productId);
         Optional<Long> optionalProductId = Optional.ofNullable(productId);
