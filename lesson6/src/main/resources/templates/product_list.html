@@ -1,0 +1,50 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" th:href="@{/resources/style.css}">
+</head>
+
+<body>
+
+<nav th:replace="fragments/navbar.html :: navbar"/>
+
+<h1>Product list</h1>
+
+<p>
+<form method="get" th:action="@{/products}">
+    <label for="minPrice">Min price</label><input type="number" id="minPrice" name="minPrice" th:value="${minPrice}">
+    <label for="maxPrice">Max price</label><input type="number" id="maxPrice" name="maxPrice" th:value="${maxPrice}">
+    <button type="submit">Apply</button>
+    <table>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+            <th>Product Cost</th>
+        </tr>
+
+        <tr th:if="${productPage.hasContent()}" th:each="product : ${productPage.content}">
+            <td><a th:href="@{/product/{id}/edit(id=${product.id})}" th:text="${product.id}">id</a></td>
+            <td th:text="${product.name}">product name</td>
+            <td th:text="${product.cost}">email</td>
+        </tr>
+
+        <tr th:unless="${productPage.hasContent()}">
+            <td colspan="4">No data</td>
+        </tr>
+    </table>
+</form>
+</p>
+
+<div th:if="${productPage.hasContent()}" class="pagination">
+    <a th:href="@{/products(page=${1}, pageSize=${productPage.size}, minPrice=${minPrice}, maxPrice=${maxPrice})}">&laquo;</a>
+
+    <a th:each="num: ${#numbers.sequence(1, productPage.totalPages)}"
+       th:classappend="${num == productPage.number + 1} ? 'active'"
+       th:href="@{/products(page=${num}, pageSize=${productPage.size}, minPrice=${minPrice}, maxPrice=${maxPrice})}">[[${num}]]</a>
+
+    <a th:href="@{/products(page=${productPage.totalPages}, pageSize=${productPage.size}, minPrice=${minPrice}, maxPrice=${maxPrice})}">&raquo;</a>
+</div>
+
+</body>
+</html>

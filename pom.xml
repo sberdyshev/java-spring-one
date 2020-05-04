@@ -7,7 +7,12 @@
 
     <groupId>ru.sberdyshev</groupId>
     <artifactId>java-spring-one</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>lesson4</module>
+        <module>lesson3</module>
+    </modules>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
@@ -122,9 +127,5 @@
             </plugin>
         </plugins>
     </build>
-
-
-
-
 
 </project>
