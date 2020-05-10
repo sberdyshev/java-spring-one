@@ -16,9 +16,9 @@
         </encoder>
     </appender>
 
-    <logger name="org.hibernate.type" level="ERROR" />
-    <logger name="org.hibernate" level="ERROR" />
-    <logger name="org.springframework" level="ERROR" />
+    <logger name="org.hibernate.type" level="WARN" />
+    <logger name="org.hibernate" level="WARN" />
+    <logger name="org.springframework" level="WARN" />
 
     <root level="debug">
         <appender-ref ref="FILE" />

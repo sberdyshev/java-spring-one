@@ -1,188 +1,71 @@
-17:07:55.769 1042 [main] INFO  r.s.g.j.s.s.SpringbootApplicationTests - Starting SpringbootApplicationTests on NB-1X65RF2 with PID 4112 (started by sberdyshev in C:\Users\SBerdyshev\IdeaProjects\java-spring-one\lesson6)
-17:07:55.809 1082 [main] DEBUG r.s.g.j.s.s.SpringbootApplicationTests - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
-17:07:55.810 1083 [main] INFO  r.s.g.j.s.s.SpringbootApplicationTests - No active profile set, falling back to default profiles: default
-17:07:58.590 3863 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.postgresql.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@42a57993
-17:07:59.760 5033 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
-17:07:59.763 5036 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
-17:07:59.763 5036 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
-17:07:59.764 5037 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
-17:07:59.764 5037 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
-17:07:59.764 5037 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
-17:07:59.764 5037 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
-17:07:59.764 5037 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
-17:07:59.767 5040 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
-17:07:59.767 5040 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
-17:07:59.767 5040 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
-17:07:59.767 5040 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."org.postgresql.Driver"
-17:07:59.767 5040 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
-17:07:59.767 5040 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
-17:07:59.769 5042 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
-17:07:59.769 5042 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
-17:07:59.769 5042 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
-17:07:59.770 5043 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:postgresql://192.168.99.100:5432/geekbrains
-17:07:59.770 5043 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
-17:07:59.770 5043 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
-17:07:59.770 5043 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
-17:07:59.770 5043 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
-17:07:59.770 5043 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
-17:07:59.770 5043 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
-17:07:59.770 5043 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
-17:07:59.770 5043 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
-17:07:59.770 5043 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
-17:07:59.770 5043 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
-17:07:59.771 5044 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
-17:07:59.771 5044 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
-17:07:59.771 5044 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
-17:07:59.771 5044 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
-17:07:59.771 5044 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"postgres"
-17:07:59.772 5045 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
-17:07:59.772 5045 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-17:07:59.897 5170 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a9344f5
-17:07:59.898 5171 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-17:07:59.999 5272 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
-17:08:00.025 5298 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6f84feee
-17:08:00.031 5304 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@61431d6e
-17:08:00.043 5316 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@657c959e
-17:08:00.067 5340 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@207e1755
-17:08:00.086 5359 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@68c5ee3a
-17:08:00.094 5367 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11143621
-17:08:00.100 5373 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@104591f8
-17:08:00.108 5381 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4051e81a
-17:08:00.114 5387 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7227a14
-17:08:00.114 5387 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
-17:08:02.944 8217 [main] DEBUG i.m.c.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
-17:08:04.954 10227 [main] INFO  r.s.g.j.s.s.SpringbootApplicationTests - Started SpringbootApplicationTests in 9.605 seconds (JVM running for 10.928)
-17:08:05.193 10466 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-17:08:05.193 10466 [SpringContextShutdownHook] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
-17:08:05.203 10476 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6a9344f5: (connection evicted)
-17:08:05.204 10477 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6f84feee: (connection evicted)
-17:08:05.206 10479 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@61431d6e: (connection evicted)
-17:08:05.207 10480 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@657c959e: (connection evicted)
-17:08:05.208 10481 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@207e1755: (connection evicted)
-17:08:05.209 10482 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@68c5ee3a: (connection evicted)
-17:08:05.209 10482 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@11143621: (connection evicted)
-17:08:05.211 10484 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@104591f8: (connection evicted)
-17:08:05.212 10485 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4051e81a: (connection evicted)
-17:08:05.213 10486 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7227a14: (connection evicted)
-17:08:05.214 10487 [SpringContextShutdownHook] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
-17:08:05.214 10487 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-17:08:11.866 556  [main] INFO  r.s.g.j.s.s.SpringbootApplication - Starting SpringbootApplication on NB-1X65RF2 with PID 11352 (C:\Users\SBerdyshev\IdeaProjects\java-spring-one\lesson6\target\classes started by sberdyshev in C:\Users\SBerdyshev\IdeaProjects\java-spring-one\lesson6)
-17:08:11.868 558  [main] DEBUG r.s.g.j.s.s.SpringbootApplication - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
-17:08:11.869 559  [main] INFO  r.s.g.j.s.s.SpringbootApplication - No active profile set, falling back to default profiles: default
-17:08:13.403 2093 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-17:08:13.403 2093 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-17:08:13.403 2093 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
-17:08:13.519 2209 [main] INFO  o.a.c.c.C.[.[localhost].[/app] - Initializing Spring embedded WebApplicationContext
-17:08:13.556 2246 [main] DEBUG i.m.c.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
-17:08:13.644 2334 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.postgresql.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
-  context: app
-  delegate: true
-----------> Parent Classloader:
-sun.misc.Launcher$AppClassLoader@73d16e93
-
-17:08:14.081 2771 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
-17:08:14.083 2773 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
-17:08:14.083 2773 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
-17:08:14.083 2773 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
-17:08:14.083 2773 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
-17:08:14.083 2773 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
-17:08:14.083 2773 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
-17:08:14.083 2773 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
-17:08:14.083 2773 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
-17:08:14.083 2773 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."org.postgresql.Driver"
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:postgresql://192.168.99.100:5432/geekbrains
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
-17:08:14.084 2774 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
-17:08:14.085 2775 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
-17:08:14.085 2775 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
-17:08:14.085 2775 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
-17:08:14.085 2775 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
-17:08:14.085 2775 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
-17:08:14.085 2775 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
-17:08:14.085 2775 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
-17:08:14.085 2775 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
-17:08:14.085 2775 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
-17:08:14.085 2775 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"postgres"
-17:08:14.085 2775 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
-17:08:14.085 2775 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-17:08:14.157 2847 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6fa13e6
-17:08:14.158 2848 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-17:08:14.259 2949 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
-17:08:14.267 2957 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@647766b0
-17:08:14.273 2963 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ab0944e
-17:08:14.280 2970 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e8f0dc0
-17:08:14.287 2977 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b8d9e75
-17:08:14.292 2982 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74102f52
-17:08:14.298 2988 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a6cd77a
-17:08:14.305 2995 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c1b38fa
-17:08:14.315 3005 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ba2613a
-17:08:14.322 3012 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e3dbda3
-17:08:14.322 3012 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
-17:08:15.688 4378 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-17:08:15.711 4401 [main] INFO  r.s.g.j.s.s.SpringbootApplication - Started SpringbootApplication in 4.116 seconds (JVM running for 4.643)
-17:08:28.756 17446 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/app] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-17:08:28.789 17479 [http-nio-8080-exec-1] DEBUG r.s.g.j.s.s.c.ProductResource - Called GET /api/v1/products
-17:08:28.802 17492 [http-nio-8080-exec-1] DEBUG r.s.g.j.s.s.service.ProductService - Called getAllProducts
-17:08:44.263 32953 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-17:08:48.371 37061 [http-nio-8080-exec-3] DEBUG r.s.g.j.s.s.c.ProductResource - Called DELETE /api/v1/products/1172
-17:08:48.374 37064 [http-nio-8080-exec-3] DEBUG r.s.g.j.s.s.service.ProductService - Called "delete product by ID" with id "1172"
-17:08:52.987 41677 [http-nio-8080-exec-4] DEBUG r.s.g.j.s.s.c.ProductResource - Called GET /api/v1/products
-17:08:52.988 41678 [http-nio-8080-exec-4] DEBUG r.s.g.j.s.s.service.ProductService - Called getAllProducts
-17:09:03.192 51882 [http-nio-8080-exec-5] DEBUG r.s.g.j.s.s.c.ProductResource - Called GET /api/v1/products/1173
-17:09:03.194 51884 [http-nio-8080-exec-5] DEBUG r.s.g.j.s.s.service.ProductService - Called "find product by id" with id "1173"
-17:09:03.197 51887 [http-nio-8080-exec-5] DEBUG r.s.g.j.s.s.service.ProductService - Called "find product by id", found product with id "1173", name "tv", cost "56"
-17:09:11.781 60471 [http-nio-8080-exec-6] DEBUG r.s.g.j.s.s.c.ProductResource - Called DELETE /api/v1/products/1173
-17:09:11.783 60473 [http-nio-8080-exec-6] DEBUG r.s.g.j.s.s.service.ProductService - Called "delete product by ID" with id "1173"
-17:09:13.436 62126 [http-nio-8080-exec-7] DEBUG r.s.g.j.s.s.c.ProductResource - Called DELETE /api/v1/products/1173
-17:09:13.438 62128 [http-nio-8080-exec-7] DEBUG r.s.g.j.s.s.service.ProductService - Called "delete product by ID" with id "1173"
-17:09:13.439 62129 [http-nio-8080-exec-7] ERROR r.s.g.j.s.s.service.ProductService - Called "delete product by ID". Product with ID "Optional[1173]" wasn't found, throwing NotFoundObjectException exception
-17:09:13.451 62141 [http-nio-8080-exec-7] DEBUG r.s.g.j.s.s.c.ProductResource - Handling NotFoundException
-17:09:14.266 62956 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-17:09:23.132 71822 [http-nio-8080-exec-8] DEBUG r.s.g.j.s.s.c.ProductResource - Called GET /api/v1/products/1173
-17:09:23.138 71828 [http-nio-8080-exec-8] DEBUG r.s.g.j.s.s.service.ProductService - Called "find product by id" with id "1173"
-17:09:23.140 71830 [http-nio-8080-exec-8] ERROR r.s.g.j.s.s.service.ProductService - Called "find product by id". Found no products with id "Optional[1173]", throwing exception
-17:09:23.141 71831 [http-nio-8080-exec-8] DEBUG r.s.g.j.s.s.c.ProductResource - Handling NotFoundException
-17:09:34.292 82982 [http-nio-8080-exec-9] DEBUG r.s.g.j.s.s.c.ProductResource - Called POST /api/v1/products/new with new product with id "null", name "iphone", descr "a phone", cost "34"
-17:09:34.346 83036 [http-nio-8080-exec-9] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - except id. Operation - "insert product with product"
-17:09:34.346 83036 [http-nio-8080-exec-9] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - checking if product is null. Operation - "insert product with product"
-17:09:34.347 83037 [http-nio-8080-exec-9] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - checking if data fields are null
-17:09:34.347 83037 [http-nio-8080-exec-9] DEBUG r.s.g.j.s.s.service.ProductService - Called "insert product with product" with id "null", name "iphone", cost "34", description "a phone"
-17:09:37.927 86617 [http-nio-8080-exec-10] DEBUG r.s.g.j.s.s.c.ProductResource - Called GET /api/v1/products
-17:09:37.929 86619 [http-nio-8080-exec-10] DEBUG r.s.g.j.s.s.service.ProductService - Called getAllProducts
-17:09:44.269 92959 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-17:09:51.370 100060 [http-nio-8080-exec-2] DEBUG r.s.g.j.s.s.c.ProductResource - Called PUT /api/v1/products/1130 with product with id "1192", name "iphone", descr "a phone", cost "345"
-17:09:51.372 100062 [http-nio-8080-exec-2] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - strict. Operation - "update product by Product object"
-17:09:51.372 100062 [http-nio-8080-exec-2] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - checking if product is null. Operation - "update product by Product object"
-17:09:51.372 100062 [http-nio-8080-exec-2] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - checking if all fields are null
-17:09:51.372 100062 [http-nio-8080-exec-2] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - checking if data fields are null
-17:09:51.372 100062 [http-nio-8080-exec-2] DEBUG r.s.g.j.s.s.service.ProductService - Called "update product by Product object" with id "1192", name "iphone", cost "345", description "a phone"
-17:09:57.884 106574 [http-nio-8080-exec-1] DEBUG r.s.g.j.s.s.c.ProductResource - Called GET /api/v1/products
-17:09:57.885 106575 [http-nio-8080-exec-1] DEBUG r.s.g.j.s.s.service.ProductService - Called getAllProducts
-17:10:07.584 116274 [http-nio-8080-exec-3] DEBUG r.s.g.j.s.s.c.ProductResource - Called PUT /api/v1/products/1130 with product with id "1192", name "null", descr "a phone", cost "345"
-17:10:07.587 116277 [http-nio-8080-exec-3] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - strict. Operation - "update product by Product object"
-17:10:07.588 116278 [http-nio-8080-exec-3] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - checking if product is null. Operation - "update product by Product object"
-17:10:07.588 116278 [http-nio-8080-exec-3] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - checking if all fields are null
-17:10:07.588 116278 [http-nio-8080-exec-3] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - checking if data fields are null
-17:10:07.588 116278 [http-nio-8080-exec-3] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - name is null
-17:10:07.588 116278 [http-nio-8080-exec-3] ERROR r.s.g.j.s.s.service.ProductService - Called update product by Product object with null fields "name", throwing NotValidProductException exception
-17:10:07.592 116282 [http-nio-8080-exec-3] DEBUG r.s.g.j.s.s.c.ProductResource - Handling NotValidObjectException
-17:10:14.271 122961 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-17:10:32.372 141062 [http-nio-8080-exec-5] DEBUG r.s.g.j.s.s.c.ProductResource - Called PUT /api/v1/products/1130 with product with id "1195", name "iphone", descr "a phone", cost "345"
-17:10:32.379 141069 [http-nio-8080-exec-5] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - strict. Operation - "update product by Product object"
-17:10:32.379 141069 [http-nio-8080-exec-5] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - checking if product is null. Operation - "update product by Product object"
-17:10:32.379 141069 [http-nio-8080-exec-5] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - checking if all fields are null
-17:10:32.379 141069 [http-nio-8080-exec-5] DEBUG r.s.g.j.s.s.service.ProductService - Product validation - checking if data fields are null
-17:10:32.379 141069 [http-nio-8080-exec-5] DEBUG r.s.g.j.s.s.service.ProductService - Called "update product by Product object" with id "1195", name "iphone", cost "345", description "a phone"
-17:10:32.381 141071 [http-nio-8080-exec-5] ERROR r.s.g.j.s.s.service.ProductService - Called "update product by Product object". Product with id "1195" wasn't found, throwing NotFoundObjectException exception
-17:10:32.383 141073 [http-nio-8080-exec-5] DEBUG r.s.g.j.s.s.c.ProductResource - Handling NotFoundException
-17:10:44.274 152964 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+01:44:20.028 735  [main] INFO  r.s.g.j.s.s.SpringbootApplicationTests - Starting SpringbootApplicationTests on NB-1X65RF2 with PID 12156 (started by sberdyshev in C:\Users\SBerdyshev\IdeaProjects\java-spring-one\lesson6)
+01:44:20.059 766  [main] DEBUG r.s.g.j.s.s.SpringbootApplicationTests - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+01:44:20.059 766  [main] INFO  r.s.g.j.s.s.SpringbootApplicationTests - No active profile set, falling back to default profiles: default
+01:44:21.919 2626 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class org.postgresql.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@42a57993
+01:44:22.802 3509 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+01:44:22.804 3511 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+01:44:22.804 3511 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+01:44:22.804 3511 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+01:44:22.804 3511 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+01:44:22.804 3511 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+01:44:22.805 3512 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+01:44:22.805 3512 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+01:44:22.805 3512 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+01:44:22.805 3512 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+01:44:22.805 3512 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+01:44:22.805 3512 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."org.postgresql.Driver"
+01:44:22.805 3512 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+01:44:22.805 3512 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+01:44:22.805 3512 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+01:44:22.805 3512 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+01:44:22.805 3512 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:postgresql://192.168.99.100:5432/products
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+01:44:22.806 3513 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+01:44:22.807 3514 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+01:44:22.807 3514 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+01:44:22.807 3514 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"postgres"
+01:44:22.807 3514 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+01:44:22.807 3514 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+01:44:22.909 3616 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2da99821
+01:44:22.911 3618 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+01:44:23.012 3719 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+01:44:23.020 3727 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b29b0f5
+01:44:23.028 3735 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35ee59e0
+01:44:23.035 3742 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31d1db85
+01:44:23.042 3749 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74d353db
+01:44:23.049 3756 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@28bebac
+01:44:23.055 3762 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@45ed8344
+01:44:23.062 3769 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a5f658f
+01:44:23.069 3776 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@14fcac94
+01:44:23.078 3785 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49f7e32c
+01:44:23.078 3785 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+01:44:24.688 5395 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01:44:24.762 5469 [main] DEBUG i.m.c.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+01:44:25.177 5884 [main] DEBUG r.s.g.j.s.s.u.service.UserService - ------------------------------------------
+01:44:25.672 6379 [main] DEBUG r.s.g.j.s.s.u.service.UserService - ------------------------------------------Called constructor creating user with id "null", name "user1", password "$2a$10$C6kYvRAfHpbsB9gxgi4v/O/cHSVl9fn1t.jBoHoLlc9X90pWJWgeq", roles "[ROLE_USER]"
+01:44:27.250 7957 [main] INFO  r.s.g.j.s.s.SpringbootApplicationTests - Started SpringbootApplicationTests in 7.479 seconds (JVM running for 8.648)
+01:44:27.585 8292 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+01:44:27.585 8292 [SpringContextShutdownHook] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+01:44:27.596 8303 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2da99821: (connection evicted)
+01:44:27.600 8307 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3b29b0f5: (connection evicted)
+01:44:27.616 8323 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@35ee59e0: (connection evicted)
+01:44:27.619 8326 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@31d1db85: (connection evicted)
+01:44:27.619 8326 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@74d353db: (connection evicted)
+01:44:27.620 8327 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@28bebac: (connection evicted)
+01:44:27.621 8328 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@45ed8344: (connection evicted)
+01:44:27.623 8330 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7a5f658f: (connection evicted)
+01:44:27.624 8331 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@14fcac94: (connection evicted)
+01:44:27.625 8332 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@49f7e32c: (connection evicted)
+01:44:27.646 8353 [SpringContextShutdownHook] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+01:44:27.646 8353 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

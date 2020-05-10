@@ -1,0 +1,43 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>User details</title>
+    <link rel="stylesheet" th:href="@{/resources/style.css}">
+</head>
+
+<body>
+
+<nav th:replace="fragments/navbar.html :: navbar"/>
+
+<h1>User details</h1>
+
+<form th:action="@{/users}" th:object="${user}" th:method="put">
+    <input th:type="hidden" th:field="*{id}">
+    <p>User Name:</p>
+    <p><input type="text" th:field="*{name}" th:value="${name}"></p>
+    <p>User Password</p>
+    <p>
+        <input type="password" th:field="*{password}" th:value="${password}">
+    </p>
+    <p>Confirm Password</p>
+    <p>
+        <input type="password" th:field="*{matchingPassword}" th:value="${matchingPassword}">
+    </p>
+    <p>User Roles</p>
+    <p>
+        <select multiple class="form-control" id="roles" th:field="*{roles}" required>
+            <option th:each="role : ${roles}"
+                    th:text="${role.name}"
+                    th:value="${role.id}"
+                    th:selected="${user.roles?.contains(role)}"></option>
+        </select>
+    </p>
+    <button type="submit">Update</button>
+</form>
+<form th:action="@{/users}" th:object="${user}" th:method="delete">
+    <input th:type="hidden" th:field="*{id}">
+    <button type="submit">Delete</button>
+</form>
+
+</body>
+</html>

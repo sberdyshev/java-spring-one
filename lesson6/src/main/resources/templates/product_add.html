@@ -1,7 +1,7 @@
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
 
 <head>
-    <title>Product form</title>
+    <title>Product add</title>
     <link rel="stylesheet" th:href="@{/resources/style.css}">
 </head>
 
@@ -9,9 +9,9 @@
 
 <nav th:replace="fragments/navbar.html :: navbar"/>
 
-<h1>Product</h1>
+<h1>Product add</h1>
 
-<form th:action="@{/product}" th:object="${product}" method="post">
+<form th:action="@{/products}" th:object="${product}" method="post">
     <p>Product Name:</p>
     <p><input type="text" th:field="*{name}"></p>
     <p>Product Cost</p>
