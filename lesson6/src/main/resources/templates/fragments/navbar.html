@@ -1,7 +1,13 @@
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <nav th:fragment="navbar" class="navbar">
     <a th:href="@{/products}">Products</a>
-    <a th:href="@{/product/new}">New Product</a>
+    <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/products/new}">New Product</a>
+    <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/users}">Users</a>
+    <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/users/new}">New User</a>
+    <a sec:authorize="isAnonymous()" th:href="@{/login}">Login</a>
+    <a sec:authorize="isAuthenticated()" th:href="@{/logout}">Logout <span
+            sec:authentication="principal.username"></span></a>
+
 </nav>
 </html>

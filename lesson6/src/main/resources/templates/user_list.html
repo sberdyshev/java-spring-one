@@ -1,0 +1,45 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Users</title>
+    <link rel="stylesheet" th:href="@{/resources/style.css}">
+</head>
+
+<body>
+
+<nav th:replace="fragments/navbar.html :: navbar"/>
+
+<h1>User list</h1>
+
+<p>
+<form method="get" th:action="@{/users}">
+    <table>
+        <tr>
+            <th>User ID</th>
+            <th>User Name</th>
+        </tr>
+
+        <tr th:if="${userPage.hasContent()}" th:each="user : ${userPage.content}">
+            <td><a th:href="@{/users/{id}/details(id=${user.id})}" th:text="${user.id}">id</a></td>
+            <td th:text="${user.name}">user name</td>
+        </tr>
+
+        <tr th:unless="${userPage.hasContent()}">
+            <td colspan="4">No data</td>
+        </tr>
+    </table>
+</form>
+</p>
+
+<div th:if="${userPage.hasContent()}" class="pagination">
+    <a th:href="@{/users(pageNumber=${1}, pageSize=${userPage.size})}">&laquo;</a>
+
+    <a th:each="num: ${#numbers.sequence(1, userPage.totalPages)}"
+       th:classappend="${num == userPage.number + 1} ? 'active'"
+       th:href="@{/users(pageNumber=${num}, pageSize=${userPage.size})}">[[${num}]]</a>
+
+    <a th:href="@{/users(pageNumber=${userPage.totalPages}, pageSize=${userPage.size})}">&raquo;</a>
+</div>
+
+</body>
+</html>

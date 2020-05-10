@@ -1,0 +1,46 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>User add</title>
+    <link rel="stylesheet" th:href="@{/resources/style.css}">
+</head>
+
+<body>
+
+<nav th:replace="fragments/navbar.html :: navbar"/>
+
+<h1>User add</h1>
+
+<form th:action="@{/users}" th:object="${user}" method="post">
+    <input th:type="hidden" th:field="*{id}">
+    <p>User Name:</p>
+    <p>
+        <input type="text" th:field="*{name}">
+    </p>
+
+    <p>Password:</p>
+    <p>
+        <input type="password" th:field="*{password}">
+    <p th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password don't match</p>
+    </p>
+
+    <p>Repeat password:</p>
+    <p>
+        <input type="password" th:field="*{matchingPassword}">
+    <p th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password don't match</p>
+    </p>
+
+    <p>Roles:</p>
+    <p>
+        <select multiple class="form-control" id="roles" th:field="*{roles}" required>
+            <option th:each="role : ${roles}"
+                    th:text="${role.name}"
+                    th:value="${role.id}"
+                    th:selected="${user.roles?.contains(role)}"></option>
+        </select>
+    </p>
+    <button type="submit">Save</button>
+</form>
+
+</body>
+</html>
